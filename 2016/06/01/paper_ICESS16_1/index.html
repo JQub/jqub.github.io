@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="x769ihcPpzMLLAP03TIykIjylrYsAghgJfwpvP8LZ14" />
+  <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <!-- 
+  <title>Optimal Functional Assignment and Communication Selection under Timing Constraint for Self-Timed Pipelines | Weiwen Jiang | Home Page</title>
+ -->
+  <title>Weiwen Jiang | Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--<link rel="stylesheet" href="./css/application.css">-->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/mason.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+		tex2jax: {
+		  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		  processEscapes: true
+		}
+	  });
+  </script>  
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
+  <!--<script src="./js/application.js"></script>-->
+</head>
+
+<body style="background: url(/css/images/bg.png) 0 0 repeat; ">
+	
+
+  <div style="min-width:1200px;">
+
+  <div class="sf-banner">
+    <div class="sf-banner-inner">
+      <div class="region region-banner">
+        <div id="block-parentsite" data-block-plugin-id="parent_site" class="block block-gmu-core block-parent-site">
+
+          <div class="parent-site-container" style="min-width:200px;">
+            <a href="https://www2.gmu.edu/"><svg class="svg-inline--fa fa-chevron-circle-left fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg>
+            <span class="full-univesity-name">George Mason University</span></a>
+          </div>
+
+          <div class="parent-school-ext" style="min-width:60px;">
+            <a href="https://volgenau.gmu.edu/" class="parent-site-link parent-school-name" data-tippy="Volgeneu School of Engineering" data-tippy-arrow="true" data-tippy-placement="bottom" title="Volgeneu School of Engineering" style="padding-top: 10px;">Volgenau</a>
+          </div>
+          
+        </div>
+
+        <div data-block-plugin-id="utility_menu_block" class="block-utilitymenublock block block-gmu-core block-utility-menu-block" style="min-width:800px;">
+          <div class="utility-link">
+              <ul>
+
+              
+                  
+                    <a class="main-nav-link" href="/" style="color: #000; font-weight: bold; background-color: #EFDB92;">Home</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/team" style="color: #000; ">Team</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/paper" style="color: #000; ">Publication</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/research" style="color: #000; ">Research</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/teaching" style="color: #000; ">Teaching</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/service" style="color: #000; ">Service</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/awards" style="color: #000; ">Awards</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/blog" style="color: #000; ">Blog</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/bio" style="color: #000; ">Bio</a>
+                  
+              
+                  
+                    <a class="main-nav-link" href="/categories/QF" style="color: #000; ">QuantumFlow</a>
+                  
+              
+
+              
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+	
+
+  <header id="header" role="banner"  style="height:208px;  min-width:1200px;">
+  
+      <div  style="height:150px; padding-left:60px; background-color:rgba(12,35,64,0.9);">
+        <div id="block-sitebranding" data-block-plugin-id="system_branding_block">
+
+          <div style="float:left;">        
+            <a href="https://ece.gmu.edu/" title="Home" rel="home" class="logo" style="padding-left: 0px; height:120px;">
+              <img src="https://ece.gmu.edu/themes/custom/sf_mason_basic/logo.png" alt="Home">
+            </a>
+          </div>
+          <div class="site-branding-text" style="float:left; margin-top:40px;">
+            <div class="site-branding-name">
+              <a href="https://ece.gmu.edu/" title="Home" rel="home">Electrical and Computer Engineering</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+	  
+      <div class="titlebar container-fluid" style="height:60px; padding-left:60px; padding-top:5px; background-color:rgba(255,204,51,0.8);">
+        <div class="row">
+          <div class="col" style="padding-left: 0px;">
+            <h1 class="site-title"><a href="/" accesskey="H" style="font-size: 0.7em;padding-top: 5px;padding-bottom: 5px;">Dr Jiang's Quantum-Classical Artificial Intelligence Lab (JQub)</a></h1>
+          </div>
+        </div>
+      </div>
+  </header>
+    
+  <div id="container" style="background: url(/css/images/bg.png) 0 0 repeat; ">
+    <div id="wrap" style="background: url(/css/images/bg.png) 0 0 repeat; ">
+      
+      <div class="outer" style="clear:both; width:1000px; min-height: 500px; margin-top:10px; padding-top:20px; padding-left:0px; padding-right:0px; padding-bottom: 30px; background: url(/css/images/bg.png) 0 0 repeat; ">
+        <div>
+    <article id="post-paper_ICESS16_1" class="article article-type-post" itemscope itemprop="blogPost">      
+      <div class="article-inner" style="margin-top: -10px">
+        
+        
+          <b><header class="article-header" style="font-size:24pt;">
+            
+      
+      Optimal Functional Assignment and Communication Selection under Timing Constraint for Self-Timed Pipelines    
+  
+
+          </header></b>
+        
+        <div class="article-entry" itemprop="articleBody">
+          
+            
+          
+        </div>
+        <footer class="article-footer">
+          <a data-url="https://wjiang.nd.edu/2016/06/01/paper_ICESS16_1/" data-id="cki8gh9u9003svgvbgy3opw1w" class="article-share-link">Share</a>
+          
+          
+        </footer>
+      </div>
+      <!-- 
+        
+<nav id="article-nav">
+  
+    <a href="/2016/07/01/paper_JSPS16/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Properties of Self-Timed Ring Architectures for Deadlock-Free and Consistent Configuration Reaching Maximum Throughput
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/01/research_nvm/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Non-Volatile Memories</div>
+    </a>
+  
+</nav>
+
+       -->
+    </article>
+
+           
+
+
+
+</div>        
+      
+      <div style="clear:both;">
+        <div>
+        <br /><a href='https://clustrmaps.com/site/1a9dt'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=a1b7dd&w=200&t=tt&d=y7uhNSQnn7BwOiSgdjrJlsl50phjgSmRvL7A-puzXmA&co=f1f1f1&ct=a1b7dd' style="margin-top:20px;" /></a><br /></div>
+      </div>
+
+      </div> 
+
+      <!--<footer id="footer" style="background: #A9A9A9; color: black; min-width:1200px;">
+  
+  <div class="outer" style="color:#000">
+    <div id="footer-info" class="inner">	  	  	  
+	  <div style="float:left">
+	  Total pageviews: <a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3223307&c=9670234" alt="AmazingCounters.com"></a><br />
+      Last modified: Feb. 2019. <br />
+      &copy; 2021 Weiwen Jiang<br>	  
+	  </div>
+	  <div style="float:right"><a href="https://clustrmaps.com/site/1a9dt" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=a1b7dd&w=a&t=tt&d=y7uhNSQnn7BwOiSgdjrJlsl50phjgSmRvL7A-puzXmA&co=f1f1f1&ct=a1b7dd" /></a><br /></div>
+    </div>	
+  </div>
+</footer>-->
+
+
+  
+
+
+
+  <footer id="footer2" class="sf_mason_basic_footer" style="min-height: 240px; min-width: 1200px;">
+    <div class="cog--mq mq-footer">
+      <div class="region region-footer">
+
+        <div id="block-footerinformation" class="footer-information-desktop block block-gmu-core block-footer-info" data-block-plugin-id="footer_info">
+
+
+        <div class="site-info"><span class="footer-logo"><img class="logo" alt="George Mason University" src="https://ece.gmu.edu/themes/custom/sf_mason_basic/images/mason-logo.png"></span><div class="site-name">Electrical and Computer Engineering</div><div class="site-abbr">Electrical</div></div><div class="site-info-wrapper"><h2 class="site-slogan">PATRIOTS BRAVE &amp; BOLD</h2><div class="footer-info"><p>4400 University Drive<br>
+        Fairfax, Virginia 22030<br>
+        703-993-1000</p>
+        <div class="footer-copyright">© 2021 George Mason University</div></div></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    </div> 
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link" style="color:white">Home</a>
+  
+    <a href="/categories/team" class="mobile-nav-link" style="color:white">Team</a>
+  
+    <a href="/categories/paper" class="mobile-nav-link" style="color:white">Publication</a>
+  
+    <a href="/categories/research" class="mobile-nav-link" style="color:white">Research</a>
+  
+    <a href="/categories/teaching" class="mobile-nav-link" style="color:white">Teaching</a>
+  
+    <a href="/categories/service" class="mobile-nav-link" style="color:white">Service</a>
+  
+    <a href="/categories/awards" class="mobile-nav-link" style="color:white">Awards</a>
+  
+    <a href="/categories/blog" class="mobile-nav-link" style="color:white">Blog</a>
+  
+    <a href="/categories/bio" class="mobile-nav-link" style="color:white">Bio</a>
+  
+    <a href="/categories/QF" class="mobile-nav-link" style="color:white">QuantumFlow</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+    
+   
+
+  </div>  
+
+  
+</body>
+</html>
