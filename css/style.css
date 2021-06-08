@@ -618,18 +618,17 @@ a.article-title:hover {
   border: none;
 }
 .article-entry table {
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 5px;
 }
 .article-entry th {
-  font-weight: bold;
-  border-bottom: 3px solid #ddd;
-  padding-bottom: 0.5em;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
 }
 .article-entry td {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
 }
 .article-entry blockquote {
   font-family: Georgia, "Times New Roman", serif;
