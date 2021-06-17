@@ -6,7 +6,7 @@
   <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <!-- 
-  <title>QuantumFlow Demo (2) --- Build QF-Circ from Weights | jQub | Weiwen</title>
+  <title>Category: E2ML_Workshop | jQub | Weiwen</title>
  -->
   <link rel="shortcut icon" href="https://ece.gmu.edu/themes/custom/sf_mason_basic/favicon.ico" type="image/vnd.microsoft.icon">
   <title>jQub | Weiwen</title>
@@ -60,7 +60,7 @@
 
               
                   
-                    <a class="main-nav-link" href="/" style="color: #000; font-weight: bold; background-color: #EFDB92;">Home</a>
+                    <a class="main-nav-link" href="/" style="color: #000; ">Home</a>
                   
               
                   
@@ -145,223 +145,83 @@
       
       <div class="outer" style="clear:both; width:1000px; min-height: 500px; margin-top:10px; padding-top:20px; padding-left:0px; padding-right:0px; padding-bottom: 30px; background: url(/css/images/bg.png) 0 0 repeat; ">
         <div>
-    <article id="post-blog_2020-08-05-qfdemo2" class="article article-type-post" itemscope itemprop="blogPost">      
-      <div class="article-inner" style="margin-top: -10px">
-        
-        
-          <b><header class="article-header" style="font-size:24pt;">
-            
-      
-      QuantumFlow Demo (2) --- Build QF-Circ from Weights    
-  
-
-          </header></b>
-        
-        <div class="article-entry" itemprop="articleBody">
-          
-            <h1 id="Aim-Achieving-Quantum-Advantage"><a href="#Aim-Achieving-Quantum-Advantage" class="headerlink" title="Aim: Achieving Quantum Advantage"></a>Aim: Achieving Quantum Advantage</h1><h2 id="Why-quantum-advantage-is-not-achieved-in-Demo-1"><a href="#Why-quantum-advantage-is-not-achieved-in-Demo-1" class="headerlink" title="Why quantum advantage is not achieved in Demo(1)"></a>Why quantum advantage is not achieved in Demo(1)</h2><p><img src="/2020/08/05/blog_2020-08-05-qfdemo2/quitk_demo1_problem.jpg" width="300" alt="Neural Computation with Exponential Increasing Gates"></p>
-<p>Let’s focus on one neural computation. In Demo(1), the weights are directly encoded to quantum circuit. Assume there are N input neurons, corresponding to M=logN qbits, where N=16, M=4 in Demo(1). Demo(1) use (C^P)Z gate, P=M-1, for encoding weights. We can convert (C^P)Z gate to basic gates (e.g., X, CX, CCX) that can be completed in 1 cycle. The Gates and latency/cost related to M is listed as follow.</p>
-<table>
-<thead>
-<tr>
-<th>P</th>
-<th>Gate</th>
-<th>Lat/Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Z</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>CZ</td>
-<td>1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>CCX+CZ+CCX</td>
-<td>3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>2<em>CCX+CZ+2</em>CCX</td>
-<td>5</td>
-</tr>
-<tr>
-<td>4</td>
-<td>3 <em>CCX+CZ+3</em> CCX</td>
-<td>7</td>
-</tr>
-<tr>
-<td>K</td>
-<td>…</td>
-<td>2*K-1</td>
-</tr>
-<tr>
-<td>K</td>
-<td>…</td>
-<td>O(K)</td>
-</tr>
-</tbody>
-</table>
-<p>For the approach in Demo(1), in worst case, M qbits will need 2^M/2 = N/2 gates (see <a href="https://wjiang.nd.edu/QF_Demon2_motivation.html">quirk example for 4 qbits with 15 (C^4)Z gates</a> and the cost/time complexity of each gate is O(K), where K=M. So, the total time complexity is O(N<em>M)=O(N</em>logN). In classical computer, the number of cycles is also O(N). Therefore, no quantum advantages are achieved at all. </p>
-<h3 id="How-to-achieve-quantum-advantage-for-Machine-Learning"><a href="#How-to-achieve-quantum-advantage-for-Machine-Learning" class="headerlink" title="How to achieve quantum advantage for Machine Learning?"></a>How to achieve quantum advantage for Machine Learning?</h3><p>The answer is to reduce/decompose (C^P)Z gates.</p>
-<h4 id="Basic-Knowledge"><a href="#Basic-Knowledge" class="headerlink" title="Basic Knowledge"></a>Basic Knowledge</h4><p>The circuit is to encode the weights to make sure the sign of each amplitude is exactly the same with the weights. </p>
-<p>Let’s go back to see the amplitude in Demo(1) as follows. </p>
-<pre>
-Neural 1:
-[1.,  1.,  1.,  1.,  1.,  1.,  1., -1.,  1., -1.,  1., -1.,  1.,  1.,    1.,  1.]
-</pre>
-
-<p>Let’s show the operations to be conducted in quantum circuit as follow.</p>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th></th>
-<th></th>
-<th></th>
-<th>weight</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A0000</td>
-<td>A0001</td>
-<td>A0010</td>
-<td>A0011</td>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>A0100</td>
-<td>A0101</td>
-<td>A0110</td>
-<td>A0111</td>
-<td>*</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>A1000</td>
-<td>A1001</td>
-<td>A1010</td>
-<td>A1011</td>
-<td></td>
-<td>1</td>
-<td>-1</td>
-<td>1</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>A1100</td>
-<td>A1101</td>
-<td>A1110</td>
-<td>A1111</td>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>How can we do sign flip? (I just list the intuition here, fundamentals are matrix multiplication)</p>
-<p>For example, the weight corresponding to A1001 is -1. To make its sign flip, we need a (C)(NC)(NC)Z gate. The basic ides is that for 1, it corresponds to Z or C (dots), and for 0, it corresponds to NC/NZ (circles).</p>
-<p>If we only apply a Z gate on the last qbit, all related amplitude will be flipped, including A0001, A0011, A0101, A0111, A1001, A1011, A1101, A1111.</p>
-<p>The trick we can take is that we can continuously flip different bits and make sure the final sign of each amplitude are exactly the same with that in weights.</p>
-<h4 id="What-can-we-do-for-ML-models"><a href="#What-can-we-do-for-ML-models" class="headerlink" title="What can we do for ML models?"></a>What can we do for ML models?</h4><p>The property that we use is that the inputs can be reordered, and in turn, the weight can be reordered. </p>
-<p><strong>Therefore, we do not need to care about the position of negative number in weights, but we do care about how many weights are -1, denoted as TN.</strong></p>
-<p>Let’s use notation “ZZIIZ” to represent that we place a CCZ gate on qbits 0,1,4, and all amplitude corresponding to 11XX1 will flip sign. We figure out the following table to show how many amplitudes are associate with one type of<br>gate. (using 4 qbits system as an example)</p>
-<table>
-<thead>
-<tr>
-<th>Gate</th>
-<th>Amplitude (A)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>IIIZ</td>
-<td>8</td>
-</tr>
-<tr>
-<td>IIZZ</td>
-<td>4</td>
-</tr>
-<tr>
-<td>IZZZ</td>
-<td>2</td>
-</tr>
-<tr>
-<td>ZZZZ</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>There are 16 amplitude in total. However, as we know, the quantum has symmetric property. Therefore, we only need to cover sign flip of 8 amplitude. We observe that we can use the gates listed in the table to achieve any number (&lt;=8) of sign flip.</p>
-<h6 id="Case-1-TN-8-4-2-or-1"><a href="#Case-1-TN-8-4-2-or-1" class="headerlink" title="Case 1: TN = 8, 4, 2, or 1"></a>Case 1: TN = 8, 4, 2, or 1</h6><p>In this case, we directly apply the corresponding gates.</p>
-<h6 id="Case-2-TN-8-4-2-or-1"><a href="#Case-2-TN-8-4-2-or-1" class="headerlink" title="Case 2: TN != 8, 4, 2, or 1"></a>Case 2: TN != 8, 4, 2, or 1</h6><p>If we apply the above gate set in sequence, it has a property:<br><strong>for the odd time, we will add A negative sign, for even time, we will remove A negative sign.</strong></p>
-<p>E.G., TN=5</p>
-<p>It indicates that we need 5 negative sign; following the above property, we can have 8-4+1 = 5. We have a algorithm to help identify the order to gates used to achieve any number of negtaive signs. Details please see our paper.</p>
-<h4 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis."></a>Analysis.</h4><p>The above algorihtm indicates that for M qbits, we will involve M gates at most. According to the first table in this Demo, the cost is 1+1+3+5+…+[2(M-1)-1]=1+[1+3+5+7+…+(2M-1)]-(2M-1)=M^2-2*M+2=O(M^2).</p>
-<p>We know that the classical computer needs O(N)=O(2^M) adder/multiplier, but we only need O(M^2) quantum basic gates. Therefore, we achieve the quantum advantage.</p>
-<h1 id="QuantumFlow-Results"><a href="#QuantumFlow-Results" class="headerlink" title="QuantumFlow Results"></a>QuantumFlow Results</h1><h2 id="QF-Map"><a href="#QF-Map" class="headerlink" title="QF-Map"></a>QF-Map</h2><p>The algorithm to generate quantum circuit is implemented in QF-Map. The optimized quantum circuit is shown as follows, which has the same function as Demo(1), except the order of the inputs need to be changed.</p>
-<p>We made examples in quirk, which can be accessed using the following links:</p>
-<p><img src="/2020/08/05/blog_2020-08-05-qfdemo2/quirk6_demo1.jpg" width="1000" alt="Non-Optimized Circuit"></p>
-<p><a href="https://wjiang.nd.edu/QF_Demon2_ori36.html">Original Circuit in Demo(1)</a></p>
-<p><img src="/2020/08/05/blog_2020-08-05-qfdemo2/quirk6_opt.jpg" width="1000" alt="Optimized Circuit"></p>
-<p><a href="https://wjiang.nd.edu/QF_Demon2_opt36.html">Optimized Circuit with the Same Results</a></p>
-<p>Codes will be released to github soon.</p>
-<p><br></p>
-<p><div align="right"><br>Aug. 05, 2020<br><b>Weiwen Jiang</b><br><a href="mailto:wjiang2@nd.edu" target="_blank" rel="external">wjiang2@nd.edu</a><br></div><br><br></p>
-
-          
-        </div>
-        <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2020/08/05/blog_2020-08-05-qfdemo2/" data-id="ckq0gwo06000xnwvbdslu3dsn" class="article-share-link">Share</a>
-          
-          
-        </footer>-->
-      </div>
-      <!-- 
-        
-<nav id="article-nav">
-  
-    <a href="/2020/08/15/news_20_08_15-NSFCOVID/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/08/04/blog_2020-08-04-QFDemo1/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">QuantumFlow Demo (1) --- Classify 3 and 6 in MNIST</div>
-    </a>
+
   
-</nav>
+  
 
-       -->
-    </article>
+  
+  
 
-           
+  
+  
 
+  
+  
+  
+  
+		
+		     
+			
+			<article id="post-E2ML" class="article article-type-post" itemscope itemprop="blogPost">      
+				<div class="article-inner" style="margin-top: -40px">
+					
+					<div class="article-entry" itemprop="articleBody">
+					  
+						<h1 id="Call-for-Papers"><a href="#Call-for-Papers" class="headerlink" title="Call for Papers"></a>Call for Papers</h1><h2 id="3rd-Workshop-on-Energy-Efficient-Machine-Learning-E2ML"><a href="#3rd-Workshop-on-Energy-Efficient-Machine-Learning-E2ML" class="headerlink" title="3rd Workshop on Energy-Efficient Machine Learning (E2ML)"></a>3rd Workshop on Energy-Efficient Machine Learning (E2ML)</h2><h3 id="This-workshop-is-co-located-with-International-Green-and-Sustainable-Computing-Conference-IGSC"><a href="#This-workshop-is-co-located-with-International-Green-and-Sustainable-Computing-Conference-IGSC" class="headerlink" title="This workshop is co-located with International Green and Sustainable Computing Conference (IGSC)"></a>This workshop is co-located with International Green and Sustainable Computing Conference (<a href="https://www.igscc.org/" target="_blank" rel="external">IGSC</a>)</h3><p><a href="./E2ML-CFP.pdf">Print Version</a></p>
+<p><strong> Scope of the Workshop </strong></p>
+<p>Advances in the machine learning (ML) and its deployment in a wide range of systems for various applications. This has stirred interest in the design of various devices ranging from cloud servers to miniature IoT devices equipped with smart capabilities with embedded ML. One of the major hurdles to be addressed for an efficient design of such systems is to managed the limited available resources. The second edition of Workshop on Energy-Efficient Machine Learning (E2ML) workshop focuses on the design strategies to minimize the footprint and efficient management of resources through advanced computing techniques as well as resource management. The topics of interest to this workshop are:</p>
+<ul>
+<li>In-memory computing</li>
+<li>Neuromorphic computing</li>
+<li>Approximate computing for ML applications</li>
+<li>Power management for ML architectures</li>
+<li>Emerging memory technologies and its applicability in ML applications</li>
+<li>Spiking neural networks</li>
+<li>Learning algorithms on embedded systems</li>
+<li>Hardware-software cross-layer co-design</li>
+<li>Distributed ML algorithms and hardware for real-time performance</li>
+<li>Quantum machine learning</li>
+</ul>
+<p>Any other relevant topic related to design of hardware for ML and optimizing ML for resource constrained systems is within the scope of the workshop. Papers that showcases interesting analysis regarding embedded ML and the possible ways to extend are also welcome.</p>
+<p><strong> Submission Guidelines: </strong></p>
+<p>All papers must be original and not simultaneously submitted to another journal or conference. Full papers should be of length up to 6 single-spaced double-column pages using 10-point size font on 8.5x11 inch pages (IEEE conference style) including figures, tables, and references.</p>
+<ul>
+<li>IEEE templates can be found <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="external">here</a></li>
+<li>Full paper submission deadline: September 1st, 2021</li>
+<li>Notification of acceptance: September 15th, 2021</li>
+<li>Final paper deadline: September 21st, 2021</li>
+</ul>
+<p><strong> Contact </strong></p>
+<p>All questions about submissions should be directed to <a href="mailto:wjiang8@gmu.edu" target="_blank" rel="external">Weiwen Jiang</a></p>
+<p><strong> Organizers </strong></p>
+<ul>
+<li>Weiwen Jiang, George Mason University</li>
+<li>Jingtong Hu, University of Pittsburgh</li>
+</ul>
+
+					  					  
+					</div>					
+				</div>				
+			</article>		
+						
+		  
+		
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+
+
+<!--  -->
 
 
 </div>        
