@@ -7,7 +7,7 @@
   <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <!-- 
-  <title>Archieven: 2020/11 | JQub | ECE@GMU</title>
+  <title>Hardware Accelerators for Machine Learning (Spring 2022) | JQub | ECE@GMU</title>
  -->
   <link rel="shortcut icon" href="https://ece.gmu.edu/themes/custom/sf_mason_basic/favicon.ico" type="image/vnd.microsoft.icon">
   <title>JQub | ECE@GMU</title>
@@ -361,12 +361,242 @@
     <div id="wrap" style="background: url(/css/images/bg.png) 0 0 repeat; min-width:1200px;">
       
       <div class="outer" style="clear:both; width:1000px; min-height: 500px; margin-top:10px; padding-top:20px; padding-left:0px; padding-right:0px; padding-bottom: 30px; background: url(/css/images/bg.png) 0 0 repeat; ">
-        <div> 
-    
+        <div>
+    <article id="post-HA4ML" class="article article-type-post" itemscope itemprop="blogPost">      
+      <div class="article-inner" style="margin-top: -10px">
+        
+        
+          <b><header class="article-header" style="font-size:24pt;">
+            
       
-    
+      Hardware Accelerators for Machine Learning (Spring 2022)    
+  
 
-<!--  -->
+          </header></b>
+        
+        <div class="article-entry" itemprop="articleBody">
+          
+            <h3 id="ECE-618"><a href="#ECE-618" class="headerlink" title="ECE 618"></a>ECE 618</h3><h2 id="Coure-Inforamtion"><a href="#Coure-Inforamtion" class="headerlink" title="Coure Inforamtion"></a>Coure Inforamtion</h2><table>
+<thead>
+<tr>
+<th><b>Instructor</b></th>
+<th>Dr. Weiwen Jiang</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>E-Mail</b></td>
+<td>wjiang8@gmu.edu</td>
+</tr>
+<tr>
+<td><b>Phone</b></td>
+<td>(703)993-5083</td>
+</tr>
+<tr>
+<td><b>Lecture Time</b></td>
+<td>Monday 19:20 - 22:00</td>
+</tr>
+<tr>
+<td><b>Location</b></td>
+<td>Room 1002, Music/Theater Building</td>
+</tr>
+<tr>
+<td><b>Office Hour</b></td>
+<td>Monday 16:30 - 17:30</td>
+</tr>
+<tr>
+<td><b>Office</b></td>
+<td>Room 3247, Nguyen Engineering Building</td>
+</tr>
+<tr>
+<td><b>Zoom</b></td>
+<td><a href="http://go.gmu.edu/zoom4weiwen" target="_blank" rel="external">http://go.gmu.edu/zoom4weiwen</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Course-Materials"><a href="#Course-Materials" class="headerlink" title="Course Materials"></a>Course Materials</h2><p>Course materials will be posted before or after the class. No formal textbook is required. </p>
+<h2 id="Recommended-Prerequisites"><a href="#Recommended-Prerequisites" class="headerlink" title="Recommended Prerequisites"></a>Recommended Prerequisites</h2><p>ECE 554 (ECE 499/590 in Fall 2021: Machine Learning for Embedded Systems) with the minimum grade of B- or permission of instructor.</p>
+<h2 id="Course-Description"><a href="#Course-Description" class="headerlink" title="Course Description"></a>Course Description</h2><p>This course covers the hardware design principles to deploy different machine learning algorithms. The emphasis is on understanding the fundamentals of machine learning and hardware architectures and determine plausible methods to bridge them. Topics include precision scaling, in-memory computing, hyperdimensional computing, architectural modifications, GPUs and vector architectures, quantum computing as well as recent hardware programming tools such as Xilinx AI Vitis, Xilinx HLS, and IBM Qiskit.</p>
+<h2 id="Tools-for-Lab"><a href="#Tools-for-Lab" class="headerlink" title="Tools for Lab"></a>Tools for Lab</h2><ul>
+<li>Google <a href="https://colab.research.google.com/" target="_blank" rel="external">Colab</a></li>
+<li>Xilinx <a href="https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-1.html" target="_blank" rel="external">High-Level Synthesis</a></li>
+<li>IBM <a href="https://www.ibm.com/quantum-computing/" target="_blank" rel="external">Qiskit</a></li>
+</ul>
+<h2 id="Schedule-and-Documents"><a href="#Schedule-and-Documents" class="headerlink" title="Schedule and Documents"></a>Schedule and Documents</h2><p><a href="./syllabi/ECE618_2022_Syllabus.pdf">[Syllabi]</a></p>
+<table>
+<thead>
+<tr>
+<th><b>W</b></th>
+<th><b>Date</b></th>
+<th><b>Topic</b></th>
+<th><b>Documents</b></th>
+<th><b>Note</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Session I: Classical Computing Accelerators for Machine Learning</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Jan. 24</td>
+<td>Course Information &amp; Machine Learning and FPGA Accelerator Recap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jan. 31</td>
+<td>Vector Architectures, FPGAs and GPU Architectures</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Feb. 7</td>
+<td>ASIC Accelerators</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Session II: Novel Post-Moore Computing Accelerators for ML</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Feb. 14</td>
+<td>In-Memory Computing Accelerator Design</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Feb. 21</td>
+<td>Neuromorphic Accelerators</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Feb. 28</td>
+<td>Hyperdimensional Computing Accelerators</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Mar. 07</td>
+<td>Quantum Neural Network Accelerators</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Mar. 21</td>
+<td>Midterm Exam</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Session III: Other Accelerator Related Topics</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Mar. 28</td>
+<td>Project Proposal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Apr. 04</td>
+<td>Distributed Learning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Apr. 11</td>
+<td>Hands-on Accelerator Design (1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Apr. 18</td>
+<td>Project Overview</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Apr. 25</td>
+<td>Hands-on Accelerator Design (2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>May 02</td>
+<td>Project Presentations</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>May 11-18</td>
+<td>Final exam</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+          
+        </div>
+        <!--<footer class="article-footer">
+          <a data-url="https://wjiang.nd.edu/2022/01/01/HA4ML/" data-id="ckygg0wkx0000tcmyfba7po2l" class="article-share-link">Share</a>
+          
+          
+        </footer>-->
+      </div>
+      <!-- 
+        
+<nav id="article-nav">
+  
+    <a href="/2222/01/01/paper_NatureElec/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Is Quantum Computing Ready for Deep Learning?
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/01/01/paper_Sigmetric/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">One Proxy Device Is Enough for Hardware-Aware Neural Architecture Search</div>
+    </a>
+  
+</nav>
+
+       -->
+    </article>
+
+           
+
+
 
 </div>        
       
