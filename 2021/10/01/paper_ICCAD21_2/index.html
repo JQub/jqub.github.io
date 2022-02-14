@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -380,7 +410,7 @@
           
         </div>
         <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2021/10/01/paper_ICCAD21_2/" data-id="ckzn5b73k005b5wmy3c5stb3x" class="article-share-link">Share</a>
+          <a data-url="https://wjiang.nd.edu/2021/10/01/paper_ICCAD21_2/" data-id="ckzn5ld2c005f4omygiu618ne" class="article-share-link">Share</a>
           
           
         </footer>-->
@@ -389,19 +419,19 @@
         
 <nav id="article-nav">
   
-    <a href="/2021/10/01/paper_ICCAD21_1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nieuwer</strong>
+    <a href="/2021/10/01/paper_ICCAD21_3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          FL-DISCO&lt;b&gt;:&lt;/b&gt; Federated Generative Adversarial Network for Graph-based Molecule Drug Discovery
+          Can Noise on Qubits Be Learned in Quantum Neural Network? A Case Study on QuantumFlow [&lt;a href=&#34;https://arxiv.org/abs/2109.03430&#34;&gt;arXiv&lt;/a&gt;]
         
       </div>
     </a>
   
   
-    <a href="/2021/10/01/paper_ICCAD21_3/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ouder</strong>
-      <div class="article-nav-title">Can Noise on Qubits Be Learned in Quantum Neural Network? A Case Study on QuantumFlow [&lt;a href=&#34;https://arxiv.org/abs/2109.03430&#34;&gt;arXiv&lt;/a&gt;]</div>
+    <a href="/2021/10/01/paper_ICCAD21_4/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Exploration of Quantum Neural Architecture by Mixing Quantum Neuron Designs [&lt;a href=&#34;https://arxiv.org/abs/2109.03806&#34;&gt;arXiv&lt;/a&gt;]</div>
     </a>
   
 </nav>

@@ -7,7 +7,7 @@
   <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <!-- 
-  <title>Archieven: 2017/3 | JQub | ECE@GMU</title>
+  <title>Archives: 2017/3 | JQub | ECE@GMU</title>
  -->
   <link rel="shortcut icon" href="https://ece.gmu.edu/themes/custom/sf_mason_basic/favicon.ico" type="image/vnd.microsoft.icon">
   <title>JQub | ECE@GMU</title>
@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>

@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -468,16 +498,1045 @@ function showDivs(n) {
 Lab Introduction:
 </div>
 <div  style="font-size:16px; color:black;  margin-left:0px; margin-left:30px; margin-right:30px; line-height: 24px; text-align:justify;">
-<a href="/">JQub</a> was established at George Mason University in Fall 2021. The Director of JQub is <a href="/categories/bio/">Dr. Weiwen Jiang</a>, who was the Postdoctoral Associate in <a href="https://www3.nd.edu/~scl/index.html">Prof. Yiyu Shi's team</a> at the University of Notre Dame. He is the Ph.D. of <a href="#">Prof. Edwin H.-M. Sha</a> at Chongqing University and co-advised by <a href="http://pitt.edu/~jthu/">Prof. Jingtong Hu</a> at the University of Pittsburgh, spending 2 years to conduct resarch at Pittsburgh in his Ph.D. 
+<a href="/">JQub</a> was established at George Mason University in Fall 2021. The team focuses on the hardware/software co-design for the broadly computing systems. The target application ranges from computer vision, natural language processing to medical-related artificial intelligence applications. The target hardware platform ranges from classical computing (i.e., FPGAs, ASICs, Computing-in-Memory, Mobile Phones, etc.) to quantum computing. The open projects from JQub can be accessed from <a href="https://github.com/Jqub">GitHub</a>.
+The team is open for collaboration from both academic and industry. For contacting, please email to <b><a href="mailto:jqub.gmu@gmail.com ">jqub.gmu@gmail.com</a></b>.
+
+
+<!--
+The Director of JQub is <a href="/categories/bio/">Dr. Weiwen Jiang</a>, who was the Postdoctoral Associate in <a href="https://www3.nd.edu/~scl/index.html">Prof. Yiyu Shi's team</a> at the University of Notre Dame. He is the Ph.D. of <a href="#">Prof. Edwin H.-M. Sha</a> at Chongqing University and co-advised by <a href="http://pitt.edu/~jthu/">Prof. Jingtong Hu</a> at the University of Pittsburgh, spending 2 years to conduct resarch at Pittsburgh in his Ph.D. 
 
 <br /><br />
 The team focuses on the hardware/software co-design for the broadly computing systems. The target application ranges from computer vision, natural language processing to medical-related artificial intelligence applications. The target hardware platform ranges from classical computing (i.e., FPGAs, ASICs, Computing-in-Memory, Mobile Phones, etc.) to quantum computing. The open projects from JQub can be accessed from <a href="https://github.com/Jqub">GitHub</a>.
 
-<br /><br />
+<br />
 The team is open for collaboration from both academic and industry. For contacting, please email to <b><a href="mailto:jqub.gmu@gmail.com ">jqub.gmu@gmail.com</a></b>.
+-->
 </div>
-<br/>
 
+
+
+<div class="intro" style="font-size:18px; color:darkred; margin-left:0px; margin-top:20px; clear:both;">
+Lab News:
+</div>
+<div id="all_news">
+
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/08  
+						&nbsp&nbsp&nbspOur CODES+ISSS2019 paper is <b><font color="darkred">Nominated as Best Paper</font></b> (<a href="https://esweek.org/event-details?id=281-CO-3-B&sa=D&ust=1565694570885000">Presentation Scheduled on Oct. 14</a>). 
+						  
+							<a href="/2019/08/14/news_19_08_14-CODES-BPN/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/08  
+						&nbsp&nbsp&nbspTalk our recent works in Technical Webinar of NSF IUCRC for ASIC - August, 2019 (<a href="https://dukeuniversity.webex.com/mw3300/mywebex/nbrshared.do">Presentation</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/07  
+						&nbsp&nbsp&nbspOne tutorial paper is accepted by <a href="https://iccad.com/">ICCAD 2019</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/07  
+						&nbsp&nbsp&nbspOne paper is accepted by <a href="http://www.isvlsi.org/">ISVLSI 2019</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/07  
+						&nbsp&nbsp&nbsp<b><font color="darkred">Obtain Ph.D. degree and will join University of Notre Dame as a post-doctoral scholar.</font></b> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/06  
+						&nbsp&nbsp&nbspOne paper on Achiveing Super-Linear Performance accross Multi-FPGA is accepted by <a href="https://esweek.org">CODES+ISSS (ESWEEK 2019)</a> [<a href="https://arxiv.org/pdf/1907.08985.pdf">arXiv</a>]. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/05  
+						&nbsp&nbsp&nbspOur DAC2019 paper is <b><font color="darkred">Nominated as Best Paper</font></b> (<a href="http://www2.dac.com/events/eventdetails.aspx?id=267-11">Presentation Scheduled on Jun. 4</a>) (Rate 5/815=0.61%). 
+						  
+							<a href="/2019/05/01/news_19_06_01-DAC-BPN/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/01  
+						&nbsp&nbsp&nbspOur paper on Hardware-Aware Neural Architecture Search is accepted by <a href="https://dac.com/">DAC 2019</a> (Rate 202/815=24.8%) [<a href="https://arxiv.org/pdf/1901.11211.pdf">arXiv</a>]. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/12  
+						&nbsp&nbsp&nbspThe pubilicly code repository is built, please visit <a href="https://github.com/PITT-JZ-COOP">PITT-JZ-COOP</a> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/11  
+						&nbsp&nbsp&nbspOne paper is accepted as a poster in <a href="http://isfpga.org/">FPGA 2019</a> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/07  
+						&nbsp&nbsp&nbspOne paper is accepted by <a href="https://www.esweek.org/cases/about">CASES</a>, which is one conference in <a href="https://www.esweek.org/">ESWEEK</a>. The paper will appear at IEEE <a href="http://ieee-ceda.org/publication/tcad-publication">TCAD</a> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/05  
+						&nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (<a href="http://ieee-ceda.org/publication/tcad-publication">TCAD</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/05  
+						&nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computers (<a href="https://www.computer.org/web/tc">TC</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/04  
+						&nbsp&nbsp&nbspAwarded Scholarship from ACM SIGDA to attend PhD Forum at <a href="https://dac.com/">DAC 2018</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/02  
+						&nbsp&nbsp&nbspOne paper is accepted in <a href="https://www.glsvlsi.org/">GLSVLSI 2018</a> as poster paper to be appeared in the conference. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2018/01  
+						&nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Emerging Topics in Computing (<a href="https://www.computer.org/web/tetc">IEEE TETC</a>) 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/12  
+						&nbsp&nbsp&nbspOne paper is accepted in <a href="https://www.date-conference.com/">DATE 2018</a> as poster paper to be appeared in the conference. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/11  
+						&nbsp&nbsp&nbspAwarded <a>China National Scholarship for Ph.D. Students 2017</a> (<a>1% among all postgraduate students</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/11  
+						&nbsp&nbsp&nbspAwarded the <a href="2017\11\05\hornor_ICCD_BestPaper\index.html">BEST PAPER</a> in ICCD2017@Boston. (<a>Rate 5/258=1.9%</a>). 
+						  
+							<a href="/2017/11/06/news-17-11-06-ICCD-BP/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/11  
+						&nbsp&nbsp&nbspAwarded the <a>BEST STUDENT PAPER</a> in ESTC2017@Shenyang. 
+						  
+							<a href="/2017/11/01/news_17_11_01_ESTC-BSP/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/10  
+						&nbsp&nbsp&nbspOne paper is accepted by <a href="http://www.cse.neu.edu.cn/estc2017.html">ESTC 2017</a> (Chinese). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/10  
+						&nbsp&nbsp&nbspAwarded grants from <a>ACM SIGDA</a> and <a>Microsoft</a> to Participate in Student Research Competition at ICCAD 2017 (<a href="http://www.sigda.org/src">SRC@ICCAD</a>). 
+						  
+							<a href="/2017/10/01/news-17-11-11-SRCICCAD/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/09  
+						&nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computers (<a href="https://www.computer.org/web/tc">IEEE TC</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/09  
+						&nbsp&nbsp&nbspAwarded one of the top ranked submission (selected for <a href="https://www.computer.org/portal/web/tetc/">IEEE TETC</a> Special Issue. <a>Rate 12/258=4.65%</a>). 
+						  
+							<a href="/2017/09/11/news_17_09_10_TETC/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/09  
+						&nbsp&nbsp&nbspOne paper is accepted in <a href="http://www.iccd-conf.com/Home.html">ICCD 2017</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/05  
+						&nbsp&nbsp&nbspAwarded Scholorship from China Scholorship Council (<a href="http://www.csc.edu.cn/">CSC</a>) to visit Univeristy of Pittsburgh. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/04  
+						&nbsp&nbsp&nbspOne paper is accepted by Computers & Industrial Engineering (<a href="https://www.journals.elsevier.com/computers-and-industrial-engineering/">CAIE</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/03  
+						&nbsp&nbsp&nbspOne paper is accepted by Journal of Computational Science (<a href="https://www.journals.elsevier.com/journal-of-computational-science/">JCS</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2017/02  
+						&nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Parallel and Distributed Systems (<a href="https://www.computer.org/web/tpds">IEEE TPDS</a>). 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2016/01  
+						&nbsp&nbsp&nbspAwareded the <a>BEST PAPER NOMINATION</a> in ASP-DAC2016@MACAO. 
+						  
+							<a href="/2016/01/05/news_16_01_05_ASPDAC16_BestPaperCand/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+
+<!-- 
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+ -->
+
+
+</div>
+<div style="clear:both;" >
+<button onclick="toggleFunction()" id="news_button" style="margin-top:10px; margin-left:37px; border: none;">[More...]</button>
+</div>
 
 
 <div class="intro" style="font-size:18px; color:darkred; margin-left:0px">
@@ -717,725 +1776,6 @@ Sponsors:
   </nav>
  -->
 
-
-
-<br />
-
-<div class="intro" style="font-size:18px; color:darkred; margin-left:0px; margin-top:20px; clear:both;">
-News:
-</div>
-
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/08  
-                    &nbsp&nbsp&nbspOur CODES+ISSS2019 paper is <b><font color="darkred">Nominated as Best Paper</font></b> (<a href="https://esweek.org/event-details?id=281-CO-3-B&sa=D&ust=1565694570885000">Presentation Scheduled on Oct. 14</a>). 
-                      
-                        <a href="/2019/08/14/news_19_08_14-CODES-BPN/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/08  
-                    &nbsp&nbsp&nbspTalk our recent works in Technical Webinar of NSF IUCRC for ASIC - August, 2019 (<a href="https://dukeuniversity.webex.com/mw3300/mywebex/nbrshared.do">Presentation</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/07  
-                    &nbsp&nbsp&nbspOne tutorial paper is accepted by <a href="https://iccad.com/">ICCAD 2019</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/07  
-                    &nbsp&nbsp&nbspOne paper is accepted by <a href="http://www.isvlsi.org/">ISVLSI 2019</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/07  
-                    &nbsp&nbsp&nbsp<b><font color="darkred">Obtain Ph.D. degree and will join University of Notre Dame as a post-doctoral scholar.</font></b> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/06  
-                    &nbsp&nbsp&nbspOne paper on Achiveing Super-Linear Performance accross Multi-FPGA is accepted by <a href="https://esweek.org">CODES+ISSS (ESWEEK 2019)</a> [<a href="https://arxiv.org/pdf/1907.08985.pdf">arXiv</a>]. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/05  
-                    &nbsp&nbsp&nbspOur DAC2019 paper is <b><font color="darkred">Nominated as Best Paper</font></b> (<a href="http://www2.dac.com/events/eventdetails.aspx?id=267-11">Presentation Scheduled on Jun. 4</a>) (Rate 5/815=0.61%). 
-                      
-                        <a href="/2019/05/01/news_19_06_01-DAC-BPN/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/01  
-                    &nbsp&nbsp&nbspOur paper on Hardware-Aware Neural Architecture Search is accepted by <a href="https://dac.com/">DAC 2019</a> (Rate 202/815=24.8%) [<a href="https://arxiv.org/pdf/1901.11211.pdf">arXiv</a>]. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/12  
-                    &nbsp&nbsp&nbspThe pubilicly code repository is built, please visit <a href="https://github.com/PITT-JZ-COOP">PITT-JZ-COOP</a> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/11  
-                    &nbsp&nbsp&nbspOne paper is accepted as a poster in <a href="http://isfpga.org/">FPGA 2019</a> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/07  
-                    &nbsp&nbsp&nbspOne paper is accepted by <a href="https://www.esweek.org/cases/about">CASES</a>, which is one conference in <a href="https://www.esweek.org/">ESWEEK</a>. The paper will appear at IEEE <a href="http://ieee-ceda.org/publication/tcad-publication">TCAD</a> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/05  
-                    &nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (<a href="http://ieee-ceda.org/publication/tcad-publication">TCAD</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/05  
-                    &nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computers (<a href="https://www.computer.org/web/tc">TC</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/04  
-                    &nbsp&nbsp&nbspAwarded Scholarship from ACM SIGDA to attend PhD Forum at <a href="https://dac.com/">DAC 2018</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/02  
-                    &nbsp&nbsp&nbspOne paper is accepted in <a href="https://www.glsvlsi.org/">GLSVLSI 2018</a> as poster paper to be appeared in the conference. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2018/01  
-                    &nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Emerging Topics in Computing (<a href="https://www.computer.org/web/tetc">IEEE TETC</a>) 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/12  
-                    &nbsp&nbsp&nbspOne paper is accepted in <a href="https://www.date-conference.com/">DATE 2018</a> as poster paper to be appeared in the conference. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/11  
-                    &nbsp&nbsp&nbspAwarded <a>China National Scholarship for Ph.D. Students 2017</a> (<a>1% among all postgraduate students</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/11  
-                    &nbsp&nbsp&nbspAwarded the <a href="2017\11\05\hornor_ICCD_BestPaper\index.html">BEST PAPER</a> in ICCD2017@Boston. (<a>Rate 5/258=1.9%</a>). 
-                      
-                        <a href="/2017/11/06/news-17-11-06-ICCD-BP/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/11  
-                    &nbsp&nbsp&nbspAwarded the <a>BEST STUDENT PAPER</a> in ESTC2017@Shenyang. 
-                      
-                        <a href="/2017/11/01/news_17_11_01_ESTC-BSP/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/10  
-                    &nbsp&nbsp&nbspOne paper is accepted by <a href="http://www.cse.neu.edu.cn/estc2017.html">ESTC 2017</a> (Chinese). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/10  
-                    &nbsp&nbsp&nbspAwarded grants from <a>ACM SIGDA</a> and <a>Microsoft</a> to Participate in Student Research Competition at ICCAD 2017 (<a href="http://www.sigda.org/src">SRC@ICCAD</a>). 
-                      
-                        <a href="/2017/10/01/news-17-11-11-SRCICCAD/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/09  
-                    &nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Computers (<a href="https://www.computer.org/web/tc">IEEE TC</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/09  
-                    &nbsp&nbsp&nbspAwarded one of the top ranked submission (selected for <a href="https://www.computer.org/portal/web/tetc/">IEEE TETC</a> Special Issue. <a>Rate 12/258=4.65%</a>). 
-                      
-                        <a href="/2017/09/11/news_17_09_10_TETC/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/09  
-                    &nbsp&nbsp&nbspOne paper is accepted in <a href="http://www.iccd-conf.com/Home.html">ICCD 2017</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/05  
-                    &nbsp&nbsp&nbspAwarded Scholorship from China Scholorship Council (<a href="http://www.csc.edu.cn/">CSC</a>) to visit Univeristy of Pittsburgh. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/04  
-                    &nbsp&nbsp&nbspOne paper is accepted by Computers & Industrial Engineering (<a href="https://www.journals.elsevier.com/computers-and-industrial-engineering/">CAIE</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/03  
-                    &nbsp&nbsp&nbspOne paper is accepted by Journal of Computational Science (<a href="https://www.journals.elsevier.com/journal-of-computational-science/">JCS</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2017/02  
-                    &nbsp&nbsp&nbspOne paper is accepted by IEEE Transactions on Parallel and Distributed Systems (<a href="https://www.computer.org/web/tpds">IEEE TPDS</a>). 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2016/01  
-                    &nbsp&nbsp&nbspAwareded the <a>BEST PAPER NOMINATION</a> in ASP-DAC2016@MACAO. 
-                      
-                        <a href="/2016/01/05/news_16_01_05_ASPDAC16_BestPaperCand/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-
-<!-- 
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
- -->
 
 
 </div>        

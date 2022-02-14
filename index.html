@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -468,16 +498,1703 @@ function showDivs(n) {
 Lab Introduction:
 </div>
 <div  style="font-size:16px; color:black;  margin-left:0px; margin-left:30px; margin-right:30px; line-height: 24px; text-align:justify;">
-<a href="/">JQub</a> was established at George Mason University in Fall 2021. The Director of JQub is <a href="/categories/bio/">Dr. Weiwen Jiang</a>, who was the Postdoctoral Associate in <a href="https://www3.nd.edu/~scl/index.html">Prof. Yiyu Shi's team</a> at the University of Notre Dame. He is the Ph.D. of <a href="#">Prof. Edwin H.-M. Sha</a> at Chongqing University and co-advised by <a href="http://pitt.edu/~jthu/">Prof. Jingtong Hu</a> at the University of Pittsburgh, spending 2 years to conduct resarch at Pittsburgh in his Ph.D. 
+<a href="/">JQub</a> was established at George Mason University in Fall 2021. The team focuses on the hardware/software co-design for the broadly computing systems. The target application ranges from computer vision, natural language processing to medical-related artificial intelligence applications. The target hardware platform ranges from classical computing (i.e., FPGAs, ASICs, Computing-in-Memory, Mobile Phones, etc.) to quantum computing. The open projects from JQub can be accessed from <a href="https://github.com/Jqub">GitHub</a>.
+The team is open for collaboration from both academic and industry. For contacting, please email to <b><a href="mailto:jqub.gmu@gmail.com ">jqub.gmu@gmail.com</a></b>.
+
+
+<!--
+The Director of JQub is <a href="/categories/bio/">Dr. Weiwen Jiang</a>, who was the Postdoctoral Associate in <a href="https://www3.nd.edu/~scl/index.html">Prof. Yiyu Shi's team</a> at the University of Notre Dame. He is the Ph.D. of <a href="#">Prof. Edwin H.-M. Sha</a> at Chongqing University and co-advised by <a href="http://pitt.edu/~jthu/">Prof. Jingtong Hu</a> at the University of Pittsburgh, spending 2 years to conduct resarch at Pittsburgh in his Ph.D. 
 
 <br /><br />
 The team focuses on the hardware/software co-design for the broadly computing systems. The target application ranges from computer vision, natural language processing to medical-related artificial intelligence applications. The target hardware platform ranges from classical computing (i.e., FPGAs, ASICs, Computing-in-Memory, Mobile Phones, etc.) to quantum computing. The open projects from JQub can be accessed from <a href="https://github.com/Jqub">GitHub</a>.
 
-<br /><br />
+<br />
 The team is open for collaboration from both academic and industry. For contacting, please email to <b><a href="mailto:jqub.gmu@gmail.com ">jqub.gmu@gmail.com</a></b>.
+-->
 </div>
-<br/>
 
+
+
+<div class="intro" style="font-size:18px; color:darkred; margin-left:0px; margin-top:20px; clear:both;">
+Lab News:
+</div>
+<div id="all_news">
+
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2022/02  
+						&nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">The first Framework of NAS for Fair Neural Architectures (FaHaNa) is accepted by <a href="https://dac.com/">DAC 2022</a>. Congrats. to <a href="/yi/">Yi</a> and Junhuan.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2022/02  
+						&nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">One paper on FPGA-based Transformer is accepted by <a href="https://dac.com/">DAC 2022</a>. Thanks collaborators Hongwu and <a href="https://caiwending.cse.uconn.edu/">Caiwen</a> from UConn.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/12  
+						&nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">Proposal on Intelligent Quantum Sensing is funded by <a href="https://www.lanl.gov/projects/national-security-education-center/">NSEC at Los Alamos</a></font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/12  
+						&nbsp&nbsp&nbsp<font style="">GMU-ND-PITT-UNM Team won the Best Demonstration (First Place) at <a href="https://www.sigda.org/sigda-events/ubooth/">the 31st ACM SIGDA University Demonstration</a></font> 
+						  
+							<a href="/2021/12/09/news_21_12_09-UDDAC/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/10  
+						&nbsp&nbsp&nbsp<font style="">The first <a href="https://arxiv.org/pdf/1907.04650.pdf">NAS-based HW/SW Co-Design Framework</a> won the Best Paper Award of IEEE TCAD 2021!</font> 
+						  
+							<a href="/2021/10/19/news_21_10_19-TCAD/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/10  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in DAC 2022. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/09  
+						&nbsp&nbsp&nbsp<font style="">Several papers will be published at <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a>, Congrats. to Zhepeng, Zhiding, Yi, and collaborators!</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbspInvited to serve as Guest Editor in Electronics for the Special Issue "Quantum Machine Learning<b>:</b> Theory, Methods and Applications". 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbsp<font style="">Zhepeng and Zhiding received the <a href="2021\08\27\news_21_08_27-IBMQ\index.html">Certificate of Quantum Excellence</a> from IBM. Congrats!</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbsp<font style="">Invited to serve as a Program Committee (PC) Member in AAAI 2022.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbsp<font style="">One paper is accepted by <a href="http://iccv2021.thecvf.com/home">ICCV 2021</a>.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a></font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/08  
+						&nbsp&nbsp&nbsp<font style="">A special session proposal with <a href="https://caiwending.cse.uconn.edu/">Prof. Caiwen Ding</a> (UConn) on Drug Discovery has been accepted by <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a></font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/07  
+						&nbsp&nbsp&nbsp<font style="">CFP<b>:</b> Weiwen will organize <a href="https://jqub.github.io/categories/E2ML-Workshop/">E2ML workshop</a> at ICSG'21. Please consider to submit your ML or Quantum work to the workshop!</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/06  
+						&nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://qce.quantum.ieee.org/">IEEE Quantum Week</a>. See you then virtually on Oct. 18-22, 2021.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/06  
+						&nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://esweek.org/">ESWEEK</a>. See you then virtually on Oct. 08, 2021.</font> 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/05  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in ICCAD 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/04  
+						&nbsp&nbsp&nbspInvited to serve as Guest Editor of IEEE TCAS-II Special Session on ISICAS 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/04  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in IEEE SOCC 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/04  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in ASAP 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/03  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in GLSVLSI 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/03  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in ISLVLSI 2021. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;"> 						
+						2021/03  
+						&nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">Weiwen will join the <a href="https://ece.gmu.edu/">ECE department</a> at <a href="https://www2.gmu.edu/">George Mason University</a> as an Assistant Professor in Fall 2021</font>. 
+						  
+						  
+					</div>
+				
+
+				
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2021/02  
+						&nbsp&nbsp&nbspOur paper on AutoML for the on-line reconfigurable transformer is accepted by <a href="https://dac.com/">DAC 2021</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2021/01  
+						&nbsp&nbsp&nbsp<font style="">The SS work serving as the backbone of QuantumFlow has been released at <a href="https://github.com/weiwenjiang/QML_tutorial">Github</a></font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/12  
+						&nbsp&nbsp&nbsp<font style="">Top Winning Awards at <a href="https://github.com/IEEEServices/hackathon">IEEE Services Hackathon.</a> <u>Media Coverage</u>：[<a href="https://cse.nd.edu/news/notre-dame-team-shares-top-honors-in-ieee-services-2020-hackathon-for-project-related-to-covid-19-patient-data-privacy/">ND Media</a>]</font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/12  
+						&nbsp&nbsp&nbsp<font style="">QuantumFlow work has been accepted by <a href="https://www.nature.com/ncomms/">Nature Communications</a></font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/11  
+						&nbsp&nbsp&nbspA special session work on implementing neural networks onto quantum circuits using IBM Qiskit will be given at <a href="http://www.aspdac.com/aspdac2021/cfd/">ASP-DAC'21</a> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in DAC 2021. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in SRC at ASP-DAC 2021. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in SAC 2021. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspInvited to serve as a TPC member in ASP-DAC 2021. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspOur paper is accepted by <a href="https://www.iccd-conf.com/Home.html">ICCD 2020</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/10  
+						&nbsp&nbsp&nbspOur paper is accepted by <a href="https://iccad.com/">ICCAD 2020</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/09  
+						&nbsp&nbsp&nbspUpdated QuantumFlow has demonstrated Quantum Advantages for Neural Network Computation. <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://www.sohu.com/a/420591285_473283">AI era news</a>]</font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/08  
+						&nbsp&nbsp&nbspProposal on FPGA-based COVID-19 Screening is funded by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2027539&HistoricalAwards=false">NSF IIS.</a> <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://ndsmcobserver.com/2020/09/university-researchers-use-artificial-intelligence-to-increase-ct-screening-efficiency/">The OBSERVER news</a>]</font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/07  
+						&nbsp&nbsp&nbspOur paper with the collaboration of Edgecortix is accepted by <a href="https://esweek.org">CODES+ISSS (ESWEEK 2020)</a>. [<a href="https://wjiang.nd.edu/2020/07/07/paper_codes+isss20/codes20_weiwen.pdf">Paper</a>] 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/07  
+						&nbsp&nbsp&nbspInvited presentation at <a href="https://sites.google.com/view/road4nn/schedule">ROAD4NN</a> workshop in DAC'20. [<a href="https://wjiang.nd.edu/RODA4NN2HW.pdf">Slides</a>] 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/06  
+						&nbsp&nbsp&nbspThe first machine learning and quantum circuit co-design framework, QuantumFlow, is on-line now. <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://www.sohu.com/a/409528877_473283">AI era news</a>]</font> 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/06  
+						&nbsp&nbsp&nbspTwo papers on NAS for Medical Image Segmentation and NAS for secure Medical are accepted by <a href="https://www.miccai2020.org/en/">MICCAI</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/04  
+						&nbsp&nbsp&nbspReceived research grant from <a href="https://research.fb.com/programs/research-awards/proposals/towards-on-device-ai-request-for-proposals/">Facebook</a> for the collaboration of on-deivce AI. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/04  
+						&nbsp&nbsp&nbspOur paper on co-exploration of NAS and CIM is accepted by <a href="https://www.computer.org/web/tc">IEEE TC</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/03  
+						&nbsp&nbsp&nbspOur paper with the collaboration of Edgecortix is accepted by <a href="https://ieee-ceda.org/publication/tcad-publication">IEEE TCAD</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/02  
+						&nbsp&nbsp&nbspOur paper with the collaboration of Facebook and Georgia Tech is accepted by <a href="http://dac.com/">DAC 2020</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/01  
+						&nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in Late Result Break in DAC'20 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/01  
+						&nbsp&nbsp&nbspOne paper is accepted by <a href="http://ecai2020.eu/">ECAI 2020</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/01  
+						&nbsp&nbsp&nbspOur ASP-DAC 2020 paper is <b><font color="darkred">Nominated as Best Paper</font></b>. 
+						  
+							<a href="/2020/01/14/news_20_01_14-ASP-DAC-BPN/" style="color: darkblue;">[Details]</a>
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/01  
+						&nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in ISLVLSI'20 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2020/01  
+						&nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in GLSVLSI'20 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/10  
+						&nbsp&nbsp&nbspReceived research grant from <a href="https://www.edgecortix.com/">Edgecortix</a> for the collaboration in HW/SW Co-Exploration for Machine Learning on Edge. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/09  
+						&nbsp&nbsp&nbspReceived travel grant from IEEE/CEDA. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+      
+          
+      <div style="font-size:14px; color:black; margin-left:30px"> 
+        <div>
+          <div style="float:left;clear:both;" id="focus_news">                  
+            
+				
+
+				
+				
+					<div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px; display:none;" class="oldnews"> 						
+						2019/08  
+						&nbsp&nbsp&nbspOur paper on Co-Exploring Neural Architecture and Network-on-Chip Designs is accepted by <a href="http://aspdac.com">ASP-DAC 2020</a>. 
+						  
+						  
+					</div>
+				
+				
+				
+				
+				
+            			            
+          </div>		  
+        </div>		
+      </div>
+	  
+	  
+
+      
+  
+
+<!-- 
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
+ -->
+
+
+</div>
+<div style="clear:both;" >
+<button onclick="toggleFunction()" id="news_button" style="margin-top:10px; margin-left:37px; border: none;">[More...]</button>
+</div>
 
 
 <div class="intro" style="font-size:18px; color:darkred; margin-left:0px">
@@ -559,8 +2276,6 @@ Research Interests:
 Sponsors:
 </div>
  
-    
-      
     
       
           
@@ -772,6 +2487,8 @@ Sponsors:
     
       
     
+      
+    
 
 <!-- 
   <nav id="page-nav">
@@ -779,1163 +2496,6 @@ Sponsors:
   </nav>
  -->
 
-
-
-<br />
-
-<div class="intro" style="font-size:18px; color:darkred; margin-left:0px; margin-top:20px; clear:both;">
-News:
-</div>
-
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2022/02  
-                    &nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">The first Framework of NAS for Fair Neural Architectures (FaHaNa) is accepted by <a href="https://dac.com/">DAC 2022</a>. Congrats. to <a href="/yi/">Yi</a> and Junhuan.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2022/02  
-                    &nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">One paper on FPGA-based Transformer is accepted by <a href="https://dac.com/">DAC 2022</a>. Thanks collaborators Hongwu and <a href="https://caiwending.cse.uconn.edu/">Caiwen</a> from UConn.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/12  
-                    &nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">Proposal on Intelligent Quantum Sensing is funded by <a href="https://www.lanl.gov/projects/national-security-education-center/">NSEC at Los Alamos</a></font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/12  
-                    &nbsp&nbsp&nbsp<font style="">GMU-ND-PITT-UNM Team won the Best Demonstration (First Place) at <a href="https://www.sigda.org/sigda-events/ubooth/">the 31st ACM SIGDA University Demonstration</a></font> 
-                      
-                        <a href="/2021/12/09/news_21_12_09-UDDAC/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/10  
-                    &nbsp&nbsp&nbsp<font style="">The first <a href="https://arxiv.org/pdf/1907.04650.pdf">NAS-based HW/SW Co-Design Framework</a> won the Best Paper Award of IEEE TCAD 2021!</font> 
-                      
-                        <a href="/2021/10/19/news_21_10_19-TCAD/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/10  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in DAC 2022. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/09  
-                    &nbsp&nbsp&nbsp<font style="">Several papers will be published at <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a>, Congrats. to Zhepeng, Zhiding, Yi, and collaborators!</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbspInvited to serve as Guest Editor in Electronics for the Special Issue "Quantum Machine Learning<b>:</b> Theory, Methods and Applications". 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbsp<font style="">Zhepeng and Zhiding received the <a href="2021\08\27\news_21_08_27-IBMQ\index.html">Certificate of Quantum Excellence</a> from IBM. Congrats!</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbsp<font style="">Invited to serve as a Program Committee (PC) Member in AAAI 2022.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbsp<font style="">One paper is accepted by <a href="http://iccv2021.thecvf.com/home">ICCV 2021</a>.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbsp<font style="">A special session proposal with <a href="https://caiwending.cse.uconn.edu/">Prof. Caiwen Ding</a> (UConn) on Drug Discovery has been accepted by <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a></font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/08  
-                    &nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://iccad.com/index.php">IEEE/ACM ICCAD</a></font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/07  
-                    &nbsp&nbsp&nbsp<font style="">CFP<b>:</b> Weiwen will organize <a href="https://jqub.github.io/categories/E2ML-Workshop/">E2ML workshop</a> at ICSG'21. Please consider to submit your ML or Quantum work to the workshop!</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/06  
-                    &nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://qce.quantum.ieee.org/">IEEE Quantum Week</a>. See you then virtually on Oct. 18-22, 2021.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/06  
-                    &nbsp&nbsp&nbsp<font style="">A tutorial proposal on <a href="https://www.nature.com/articles/s41467-020-20729-5">QuantumFlow</a> has been accepted by <a href="https://esweek.org/">ESWEEK</a>. See you then virtually on Oct. 08, 2021.</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/05  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in ICCAD 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/04  
-                    &nbsp&nbsp&nbspInvited to serve as Guest Editor of IEEE TCAS-II Special Session on ISICAS 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/04  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in IEEE SOCC 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/04  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in ASAP 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/03  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in GLSVLSI 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/03  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in ISLVLSI 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/03  
-                    &nbsp&nbsp&nbsp<font style="color:darkred; font-weight:bold">Weiwen will join the <a href="https://ece.gmu.edu/">ECE department</a> at <a href="https://www2.gmu.edu/">George Mason University</a> as an Assistant Professor in Fall 2021</font>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/02  
-                    &nbsp&nbsp&nbspOur paper on AutoML for the on-line reconfigurable transformer is accepted by <a href="https://dac.com/">DAC 2021</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2021/01  
-                    &nbsp&nbsp&nbsp<font style="">The SS work serving as the backbone of QuantumFlow has been released at <a href="https://github.com/weiwenjiang/QML_tutorial">Github</a></font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/12  
-                    &nbsp&nbsp&nbsp<font style="">Top Winning Awards at <a href="https://github.com/IEEEServices/hackathon">IEEE Services Hackathon.</a> <u>Media Coverage</u>：[<a href="https://cse.nd.edu/news/notre-dame-team-shares-top-honors-in-ieee-services-2020-hackathon-for-project-related-to-covid-19-patient-data-privacy/">ND Media</a>]</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/12  
-                    &nbsp&nbsp&nbsp<font style="">QuantumFlow work has been accepted by <a href="https://www.nature.com/ncomms/">Nature Communications</a></font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/11  
-                    &nbsp&nbsp&nbspA special session work on implementing neural networks onto quantum circuits using IBM Qiskit will be given at <a href="http://www.aspdac.com/aspdac2021/cfd/">ASP-DAC'21</a> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in DAC 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in SAC 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in SRC at ASP-DAC 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspInvited to serve as a TPC member in ASP-DAC 2021. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspOur paper is accepted by <a href="https://www.iccd-conf.com/Home.html">ICCD 2020</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/10  
-                    &nbsp&nbsp&nbspOur paper is accepted by <a href="https://iccad.com/">ICCAD 2020</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/09  
-                    &nbsp&nbsp&nbspUpdated QuantumFlow has demonstrated Quantum Advantages for Neural Network Computation. <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://www.sohu.com/a/420591285_473283">AI era news</a>]</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/08  
-                    &nbsp&nbsp&nbspProposal on FPGA-based COVID-19 Screening is funded by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2027539&HistoricalAwards=false">NSF IIS.</a> <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://ndsmcobserver.com/2020/09/university-researchers-use-artificial-intelligence-to-increase-ct-screening-efficiency/">The OBSERVER news</a>]</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/07  
-                    &nbsp&nbsp&nbspOur paper with the collaboration of Edgecortix is accepted by <a href="https://esweek.org">CODES+ISSS (ESWEEK 2020)</a>. [<a href="https://wjiang.nd.edu/2020/07/07/paper_codes+isss20/codes20_weiwen.pdf">Paper</a>] 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/07  
-                    &nbsp&nbsp&nbspInvited presentation at <a href="https://sites.google.com/view/road4nn/schedule">ROAD4NN</a> workshop in DAC'20. [<a href="https://wjiang.nd.edu/RODA4NN2HW.pdf">Slides</a>] 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/06  
-                    &nbsp&nbsp&nbspThe first machine learning and quantum circuit co-design framework, QuantumFlow, is on-line now. <font style="color:darkred; font-weight:bold"><u>Media Coverage</u>：[<a href="https://www.sohu.com/a/409528877_473283">AI era news</a>]</font> 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/06  
-                    &nbsp&nbsp&nbspTwo papers on NAS for Medical Image Segmentation and NAS for secure Medical are accepted by <a href="https://www.miccai2020.org/en/">MICCAI</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/04  
-                    &nbsp&nbsp&nbspReceived research grant from <a href="https://research.fb.com/programs/research-awards/proposals/towards-on-device-ai-request-for-proposals/">Facebook</a> for the collaboration of on-deivce AI. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/04  
-                    &nbsp&nbsp&nbspOur paper on co-exploration of NAS and CIM is accepted by <a href="https://www.computer.org/web/tc">IEEE TC</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/03  
-                    &nbsp&nbsp&nbspOur paper with the collaboration of Edgecortix is accepted by <a href="https://ieee-ceda.org/publication/tcad-publication">IEEE TCAD</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/02  
-                    &nbsp&nbsp&nbspOur paper with the collaboration of Facebook and Georgia Tech is accepted by <a href="http://dac.com/">DAC 2020</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/01  
-                    &nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in Late Result Break in DAC'20 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/01  
-                    &nbsp&nbsp&nbspOne paper is accepted by <a href="http://ecai2020.eu/">ECAI 2020</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/01  
-                    &nbsp&nbsp&nbspOur ASP-DAC 2020 paper is <b><font color="darkred">Nominated as Best Paper</font></b>. 
-                      
-                        <a href="/2020/01/14/news_20_01_14-ASP-DAC-BPN/" style="color: darkblue;">[Details]</a>
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/01  
-                    &nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in ISLVLSI'20 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2020/01  
-                    &nbsp&nbsp&nbspDr. Jiang is invited to be the TPC member in GLSVLSI'20 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/10  
-                    &nbsp&nbsp&nbspReceived research grant from <a href="https://www.edgecortix.com/">Edgecortix</a> for the collaboration in HW/SW Co-Exploration for Machine Learning on Edge. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/09  
-                    &nbsp&nbsp&nbspReceived travel grant from IEEE/CEDA. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-      
-          
-      <div style="font-size:14px; color:black; margin-left:30px"> 
-        <div>
-          <div style="float:left;clear:both;">                  
-            
-                <div style="float:left; margin-top: 3px; margin-left:10px; font-weight: 300;   text-decoration: none; line-height:20px;">     
-                    2019/08  
-                    &nbsp&nbsp&nbspOur paper on Co-Exploring Neural Architecture and Network-on-Chip Designs is accepted by <a href="http://aspdac.com">ASP-DAC 2020</a>. 
-                      
-                      
-                </div>
-            
-            
-          </div>
-        </div>
-      </div>
-
-      
-  
-
-<!-- 
-  <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
-  </nav>
- -->
 
 
 </div>        

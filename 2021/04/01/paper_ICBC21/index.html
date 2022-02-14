@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -380,7 +410,7 @@
           
         </div>
         <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2021/04/01/paper_ICBC21/" data-id="ckzn5b73i00555wmyjfyiboit" class="article-share-link">Share</a>
+          <a data-url="https://wjiang.nd.edu/2021/04/01/paper_ICBC21/" data-id="ckzn5ld2900534omyur5su1pi" class="article-share-link">Share</a>
           
           
         </footer>-->
@@ -390,7 +420,7 @@
 <nav id="article-nav">
   
     <a href="/2021/04/01/news_21_04_01-ASAP-TPC/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nieuwer</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           (no title)
@@ -400,7 +430,7 @@
   
   
     <a href="/2021/03/21/news_21_03_21-GLSVLSI-TPC/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ouder</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title"></div>
     </a>
   
