@@ -7,10 +7,10 @@
   <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <!-- 
-  <title>Zhepeng Wang | JQub | Weiwen</title>
+  <title>Zhepeng Wang | JQub | ECE@GMU</title>
  -->
   <link rel="shortcut icon" href="https://ece.gmu.edu/themes/custom/sf_mason_basic/favicon.ico" type="image/vnd.microsoft.icon">
-  <title>JQub | Weiwen</title>
+  <title>JQub | ECE@GMU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!--<link rel="stylesheet" href="./css/application.css">-->
   <link rel="stylesheet" href="/css/style.css">
@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -399,10 +429,10 @@
 <h1 id="Honors-amp-Awards"><a href="#Honors-amp-Awards" class="headerlink" title="Honors &amp; Awards"></a>Honors &amp; Awards</h1><hr>
 <ul>
 <li><strong>Certificate of Quantum Excellence (100/100)</strong>, <em>Qiskit Global Summer School on Quantum Machine Learning</em>, 2021</li>
-<li><strong>Young Student Fellow Award</strong>, <em>Design Automation Conference (DAC)</em>, 2019, 2020</li>
 <li><strong>Excellent Bachelor Student</strong>, <em>Harbin Institute of Technology</em>, 2018</li>
 <li><strong>National Scholarship</strong>, <em>Ministry of Education of China</em>, 2016</li>
-<li><strong>Fuji Xerox’s Scholarship</strong>, <em>Fuji Xerox Co. Ltd.</em>, 2015</li>
+<li><strong>Fuji Xerox’s Scholarship</strong>, <em>Fuji Xerox Co. Ltd.</em>, 2015<!-- * **Young Student Fellow Award**, *Design Automation Conference (DAC)*, 2019, 2020 -->
+</li>
 </ul>
 <h1 id="Teaching"><a href="#Teaching" class="headerlink" title="Teaching"></a>Teaching</h1><hr>
 <ul>
@@ -430,7 +460,7 @@
           
         </div>
         <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2021/12/31/zhepeng/" data-id="ckxxykd3j007zzsmydwmmyw91" class="article-share-link">Share</a>
+          <a data-url="https://wjiang.nd.edu/2021/12/31/zhepeng/" data-id="cl0x643my008g9smy76w0gih4" class="article-share-link">Share</a>
           
           
         </footer>-->
@@ -439,18 +469,18 @@
         
 <nav id="article-nav">
   
-    <a href="/2022/01/01/paper_Sigmetric/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+    <a href="/2021/12/31/zhiding/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
       <div class="article-nav-title">
         
-          One Proxy Device Is Enough for Hardware-Aware Neural Architecture Search
+          Zhiding Liang
         
       </div>
     </a>
   
   
     <a href="/2021/12/10/news_21_12_10-LANL/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Proposal with Dr. Youzuo Lin at LANL and Dr. Lei Yang at UNM got funded by NSEC</div>
     </a>
   

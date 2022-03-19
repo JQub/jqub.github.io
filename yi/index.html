@@ -33,7 +33,27 @@
   
   <!--<script src="./js/application.js"></script>-->
   
-  
+  <script>
+	function toggleFunction() {	  			 
+		
+		const news_button = document.getElementById("news_button");
+		
+		
+		Array.from(document.getElementsByClassName("oldnews")).forEach(
+			function(x, index, array) {
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					news_button.innerHTML = "[Less...]";
+				  } else {
+					x.style.display = "none";
+					news_button.innerHTML = "[More...]";
+				  }
+			}
+		);
+	  
+	  
+	}
+  </script> 
 <style>
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -242,6 +262,16 @@
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .mySlides {display:none;}
+
+.clicker {
+outline:none;
+cursor:pointer;
+}
+
+.clicker:focus + .oldnews{
+display:block;
+}
+
 </style>
   
 </head>
@@ -401,7 +431,7 @@
           
         </div>
         <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2021/12/31/yi/" data-id="cky10ff76007egkmyhqx0wej8" class="article-share-link">Share</a>
+          <a data-url="https://wjiang.nd.edu/2021/12/31/yi/" data-id="cl0x643mw008c9smyd97vt58z" class="article-share-link">Share</a>
           
           
         </footer>-->
@@ -420,9 +450,9 @@
     </a>
   
   
-    <a href="/2021/12/31/zhepeng/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/12/31/zhiding/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">Zhepeng Wang</div>
+      <div class="article-nav-title">Zhiding Liang</div>
     </a>
   
 </nav>
