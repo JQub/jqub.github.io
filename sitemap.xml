@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://jqub.ece.gmu.edu/</loc>
+  <lastmod>2022-04-08T17:13:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/bio/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/team/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/paper/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/research/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/service/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/awards/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/blog/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/photo/</loc>
+  <lastmod>2022-04-08T17:13:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/</loc>
+  <lastmod>2022-04-08T17:13:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/yi/</loc>
+  <lastmod>2022-04-08T17:13:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/12/09/news_21_12_09-UDDAC/</loc>
+  <lastmod>2022-04-08T17:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/10/19/news_21_10_19-TCAD/</loc>
+  <lastmod>2022-04-08T17:13:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/01/14/news_20_01_14-ASP-DAC-BPN/</loc>
+  <lastmod>2022-04-08T17:13:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/bio/weiwen_curriculum_vitae.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/weiwen/</loc>
+  <lastmod>2022-01-03T02:45:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/zhepeng/</loc>
+  <lastmod>2022-04-08T17:13:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/zhiding/</loc>
+  <lastmod>2022-01-06T03:20:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2013/09/01/research_selftimedPipelines/</loc>
+  <lastmod>2022-04-08T17:13:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2016/01/01/research_probPipelines/</loc>
+  <lastmod>2022-04-08T17:13:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2016/02/01/research_noc/</loc>
+  <lastmod>2022-04-08T17:13:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2016/03/01/research_nvm/</loc>
+  <lastmod>2022-04-08T17:13:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/06/01/research_quantum/</loc>
+  <lastmod>2022-04-08T17:13:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/06/01/research_nnFPGA/</loc>
+  <lastmod>2022-04-08T17:13:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/12/10/news_21_12_10-LANL/</loc>
+  <lastmod>2022-04-08T17:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/</loc>
+  <lastmod>2022-04-08T17:13:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/Qiskit-syllabus.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/Course1_Framework.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/Course2_QuantumFlow.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/CSE20221_Spring2020TA.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/teaching/CSE20221_C_Tutorial.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/12/31/yi/</loc>
+  <lastmod>2022-04-08T17:13:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/12/31/zhepeng/</loc>
+  <lastmod>2022-04-08T17:13:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/12/31/zhiding/</loc>
+  <lastmod>2022-04-08T17:13:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/08/05/blog_2020-08-05-qfdemo2/</loc>
+  <lastmod>2022-04-08T17:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/08/04/blog_2020-08-04-QFDemo1/</loc>
+  <lastmod>2022-04-08T17:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/08/02/blog_2018-08-02-DataPack/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/08/01/blog_2018-08-01-DoubleBufferDesign/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/07/19/blog_2018-07-19-Analysis/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/07/14/blog_18-07-14-Window/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/07/13/blog_18-07-13/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2018/07/13/blog_18-07-13-HelloWorld/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/QF_at_Road4NN.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/QuantumFlow_VU_111121.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/QuantumFlow_IU.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Resource.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Tutorial-1-Introduction.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Tutorial-2-QuantumFlow.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Tutorial-3-QFNN.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Tutorial-4-Extension.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/Tutorial-5-Roadmap.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn_index.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2020/06/29/quantumflow/QuantumFlow_IBM_Summit.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/syllabi/ECE618_2022_Syllabus.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/slides/Lec1-Introduction-ECE618.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML_Talk1/</loc>
+  <lastmod>2022-04-08T17:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML_Talk2/</loc>
+  <lastmod>2022-04-08T17:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/lab/lab3_reference.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/lab/lab4_reference.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/reading/dataflows.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML_Talk3/</loc>
+  <lastmod>2022-04-08T17:13:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/weiwen/weiwen_curriculum_vitae.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/11/06/news-17-11-06-ICCD-BP/</loc>
+  <lastmod>2022-04-08T17:13:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/10/01/news-17-11-11-SRCICCAD/</loc>
+  <lastmod>2022-04-08T17:13:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/09/11/news_17_09_10_TETC/</loc>
+  <lastmod>2022-04-08T17:13:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2016/01/05/news_16_01_05_ASPDAC16_BestPaperCand/</loc>
+  <lastmod>2022-04-08T17:13:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/11/01/news_17_11_01_ESTC-BSP/</loc>
+  <lastmod>2022-04-08T17:13:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2017/06/2017/06/01/research_nnFPGA/HW_NAS.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2019/08/14/news_19_08_14-CODES-BPN/</loc>
+  <lastmod>2022-04-08T17:13:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2019/05/01/news_19_06_01-DAC-BPN/</loc>
+  <lastmod>2022-04-08T17:13:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/syllabi/ECE-499-001-ML4Embedded-Syllabi.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/syllabi/ECE-590-001-ML4Embedded-Syllabi.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/final/Project_Description.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec1-Introduction.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec2-Train_NN.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec3-CNN.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec4-CNN.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec5-NLP.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec6-RL.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec7-Midterm_FP.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec8-HLS.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec9-DNNonFPGA.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec10-Compression.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec11-DNNDesignCompressionReview.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec12-NeuralArchitectureSearch.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec13-HWNAS.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/slides/Lec14-Co-DesignNAS.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2021/09/01/ML4Emb/Reading/W1/Lec1_Reading.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/index.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/reading/Jeff_Harvard_Talk_Papers.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/2022/01/01/HA4ML/reading/Dayane_ND_Talk_Papers.pdf</loc>
+  <lastmod>2022-04-08T22:21:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/genindex.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/py-modindex.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/search.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.base.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.p_lyr_circ.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.v_lyr_circ.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.q_input.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.q_output.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.n_lyr_circ.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.f_lyr_circ.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.utils.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.b_lyr.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.n_lyr.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.c_qf_mixer.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.p_lyr.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.u_lyr.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.v_lyr.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.gates.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_map.u_lyr_map.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.c_mnist.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.u_lyr_circ.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.c_input.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.html</loc>
+  <lastmod>2021-10-25T15:16:21+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_circ.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_fb.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_map.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://jqub.ece.gmu.edu/categories/QF/qfnn/qfnn.qf_net.html</loc>
+  <lastmod>2021-10-25T15:16:20+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
