@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <meta name="google-site-verification" content="x769ihcPpzMLLAP03TIykIjylrYsAghgJfwpvP8LZ14" />
-  <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105" />
+  <meta name="google-site-verification" content="x769ihcPpzMLLAP03TIykIjylrYsAghgJfwpvP8LZ14">
+  <meta name="msvalidate.01" content="ECCB0341CC24C59E0D3F85526AB31105">
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <!-- 
   <title>Usage Analysis NN on ZCU102 (1) --- Memory Usage | JQub | ECE@GMU</title>
@@ -28,8 +28,7 @@
 		}
 	  });
   </script>  
-  <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   
   <!--<script src="./js/application.js"></script>-->
   
@@ -275,7 +274,7 @@ display:block;
 </style>
   
 </head>
-
+</html>
 <body style="background: url(/css/images/bg.png) 0 0 repeat; ">
 	
 
@@ -406,7 +405,7 @@ display:block;
         
         <div class="article-entry" itemprop="articleBody">
           
-            <p>In <a href="http://pitt.edu/~wej23/2018/07/13/blog_18-07-13/" target="_blank" rel="external">Design NN on ZCU102 (3)</a>, we have introduced the variables used in the design of NNs. In this blog, we are going to analyze the usage of hardware based on these variables.<br>There are two kinds of hardware usages we are targeting: (1) the memory usage, (2) DSP usage.<br>About the DSP usage, we consider the 16 bit fix-point for data related to ifm or intermidate data, which indicates the number of DSP used for one multiplication is 1.<br>Before going deeper, we first review the related variables. The last column “value” is the corresponding value of layer CONV3 in AlexNet.</p>
+            <p>In <a href="http://pitt.edu/~wej23/2018/07/13/blog_18-07-13/" target="_blank" rel="noopener">Design NN on ZCU102 (3)</a>, we have introduced the variables used in the design of NNs. In this blog, we are going to analyze the usage of hardware based on these variables.<br>There are two kinds of hardware usages we are targeting: (1) the memory usage, (2) DSP usage.<br>About the DSP usage, we consider the 16 bit fix-point for data related to ifm or intermidate data, which indicates the number of DSP used for one multiplication is 1.<br>Before going deeper, we first review the related variables. The last column “value” is the corresponding value of layer CONV3 in AlexNet.</p>
 <table>
 <thead>
 <tr>
@@ -479,7 +478,7 @@ display:block;
 </tbody>
 </table>
 <p>###Memory Usage in One Convolutional Layer</p>
-<p>First, let’s see the memory usage of a convolutional layer.<br>It composed of several parts, including buffers for (1) input feature maps, denoted as “<strong>IFM_BUF</strong>“, (2) output feature maps, denoted as “<strong>OFM_BUF</strong>“, (3) kernels, denoted as “<strong>weight_BUF</strong>“, (4) bias, denoted as “<strong>BIAS_BUF</strong>“, (5) slide windows, denoted as “<strong>window_BUF</strong>“, (6) line buffers, denoted as “<strong>Line_BUF</strong>“, and (7) last line buffer “<strong>temp_BUF</strong>“. For the buffer types (5)-(7), please refer to <a href="http://pitt.edu/~wej23/2018/07/14/blog_18-07-14-Window/" target="_blank" rel="external">Design NN on ZCU102 (2)</a>.</p>
+<p>First, let’s see the memory usage of a convolutional layer.<br>It composed of several parts, including buffers for (1) input feature maps, denoted as “<strong>IFM_BUF</strong>“, (2) output feature maps, denoted as “<strong>OFM_BUF</strong>“, (3) kernels, denoted as “<strong>weight_BUF</strong>“, (4) bias, denoted as “<strong>BIAS_BUF</strong>“, (5) slide windows, denoted as “<strong>window_BUF</strong>“, (6) line buffers, denoted as “<strong>Line_BUF</strong>“, and (7) last line buffer “<strong>temp_BUF</strong>“. For the buffer types (5)-(7), please refer to <a href="http://pitt.edu/~wej23/2018/07/14/blog_18-07-14-Window/" target="_blank" rel="noopener">Design NN on ZCU102 (2)</a>.</p>
 <p>#####IFM_BUF<br>$IFM\_BUF=ifm\_ch\_mem\times ifm\_len$</p>
 <p>#####OFM_BUF<br>$OFM\_BUF=ofm\_ch\_mem\times ofm\_len$</p>
 <p>#####weight_BUF<br>$weight\_BUF=ofm\_ch\_mem\times ifm\_ch\_mem\times kernel\_size$</p>
@@ -495,12 +494,12 @@ display:block;
 <li><strong>We need high parallelism to accelerate the application, which requires us to retrieve/store data in parallel. In consequence, it is hard to fully occupy each BRAM.</strong></li>
 </ul>
 <p>In order to calculate the BRAM usage, we need understand how to allocate BRAM in FPGA. It involves the “<em>array partition</em>“. Let’s see an example of array partition as follows.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">static FPGA_DATA IFM[ifm_ch_mem][ifm_len];</div><div class="line">#pragma HLS RESOURCE variable=IFM core=RAM_1P_BRAM</div><div class="line">#pragma HLS ARRAY_PARTITION variable=IFM cyclic factor=ifm_ch_proc dim=1</div></pre></td></tr></table></figure>
-<p>In the above codes, we use single port BRAM to implement IFM, and the IFM array is partitioned using factor of <em>ifm_ch_proc</em> on the first dimension, and the partition way is <em>cyclic</em>. (Details pls refer to <a href="https://www.xilinx.com/html_docs/xilinx2018_2/sdaccel_doc/pragma-hls-array_partition-gle1504034361378.html" target="_blank" rel="external">HLS Pragma</a>).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">static FPGA_DATA IFM[ifm_ch_mem][ifm_len];</span><br><span class="line">#pragma HLS RESOURCE variable=IFM core=RAM_1P_BRAM</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=IFM cyclic factor=ifm_ch_proc dim=1</span><br></pre></td></tr></table></figure>
+<p>In the above codes, we use single port BRAM to implement IFM, and the IFM array is partitioned using factor of <em>ifm_ch_proc</em> on the first dimension, and the partition way is <em>cyclic</em>. (Details pls refer to <a href="https://www.xilinx.com/html_docs/xilinx2018_2/sdaccel_doc/pragma-hls-array_partition-gle1504034361378.html" target="_blank" rel="noopener">HLS Pragma</a>).</p>
 <p>The factor <em>ifm_ch_proc</em> means, the number of BRAM being accessed simultaneously is <em>ifm_ch_proc</em>. In other words, it requires “at least” <em>ifm_ch_proc</em> different BRAMs to store one IFM. Here, I use “at least” for the reason that <em>ifm_len</em> may be too large that one BRAM cannot hold the whole data.</p>
 <p>With the knowledge of array partition, we can analyze the usage of BRAM for each kind of buffers. Before going deeper, we first introduce the metrics related to BRAM: (1) the words used in each BRAM and (2) The number of BRAMs. Now, we take IFM_BUF as an example to analyze the number of BRAM required for each kind of buffer.</p>
 <p>#####IFM_BUF</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">static FPGA_DATA IFM[ifm_ch_mem][ifm_len];</div><div class="line">#pragma HLS RESOURCE variable=IFM core=RAM_1P_BRAM</div><div class="line">#pragma HLS ARRAY_PARTITION variable=IFM cyclic factor=ifm_ch_proc dim=1</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">static FPGA_DATA IFM[ifm_ch_mem][ifm_len];</span><br><span class="line">#pragma HLS RESOURCE variable=IFM core=RAM_1P_BRAM</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=IFM cyclic factor=ifm_ch_proc dim=1</span><br></pre></td></tr></table></figure>
 <p>We can obtain the following information from the above codes.</p>
 <ul>
 <li>The size of IFM is $ifm\_ch\_mem\times ifm\_len$.</li>
@@ -509,7 +508,7 @@ display:block;
 </ul>
 <p>In summary, the number of BRAM used by IFM is $\left\lceil 18K/( \frac{ifm\_ch\_mem\times ifm\_len}{ifm\_ch\_proc}\times 16)\right\rceil \times ifm\_ch\_proc$.</p>
 <p>#####weight_BUF and OFM_BUF</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">  static FPGA_WEIGHTS WEIGHT[ofm_ch_mem][ifm_ch_mem][kernel_size];</div><div class="line">#pragma HLS RESOURCE variable=WEIGHT core=RAM_1P_BRAM</div><div class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT cyclic factor=ofm_ch_proc/2 dim=1</div><div class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT cyclic factor=ifm_ch_proc/2 dim=2</div><div class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT complete dim=3</div><div class="line"></div><div class="line">	static FPGA_DATA OFM[ofm_ch_mem][ofm_len];</div><div class="line">#pragma HLS RESOURCE variable=OFM core=RAM_S2P_BRAM</div><div class="line">#pragma HLS ARRAY_PARTITION variable=OFM cyclic factor=ofm_ch_proc dim=1</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">  static FPGA_WEIGHTS WEIGHT[ofm_ch_mem][ifm_ch_mem][kernel_size];</span><br><span class="line">#pragma HLS RESOURCE variable=WEIGHT core=RAM_1P_BRAM</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT cyclic factor=ofm_ch_proc/2 dim=1</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT cyclic factor=ifm_ch_proc/2 dim=2</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=WEIGHT complete dim=3</span><br><span class="line"></span><br><span class="line">	static FPGA_DATA OFM[ofm_ch_mem][ofm_len];</span><br><span class="line">#pragma HLS RESOURCE variable=OFM core=RAM_S2P_BRAM</span><br><span class="line">#pragma HLS ARRAY_PARTITION variable=OFM cyclic factor=ofm_ch_proc dim=1</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -642,12 +641,12 @@ display:block;
 </tbody>
 </table>
 <p><br></p>
-<p><div align="right"><br><b>Weiwen Jiang</b><br><br><br>Jul 19, 2018<br><br><br><a href="mailto:jiang.wwen@pitt.edu" target="_blank" rel="external">jiang.wwen@pitt.edu</a><br><br><br>At UPITT<br></div><br><br></p>
+<p><div align="right"><br><b>Weiwen Jiang</b><br><br><br>Jul 19, 2018<br><br><br><a href="mailto:jiang.wwen@pitt.edu" target="_blank" rel="noopener">jiang.wwen@pitt.edu</a><br><br><br>At UPITT<br></div><br><br></p>
 
           
         </div>
         <!--<footer class="article-footer">
-          <a data-url="https://wjiang.nd.edu/2018/07/19/blog_2018-07-19-Analysis/" data-id="cl7oz7cpd000vqgmoc1d8ib03" class="article-share-link">Share</a>
+          <a data-url="https://wjiang.nd.edu/2018/07/19/blog_2018-07-19-Analysis/" data-id="cl829j95d0016ucuj0tsslt9k" class="article-share-link">Share</a>
           
           
         </footer>-->
