@@ -148,7 +148,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  max-width: 1000;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
