@@ -8380,7 +8380,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px rgba(255, 255, 255, 0.6);
   text-rendering: optimizeLegibility;
   line-height: 1.2em;
-  font-family: GPC, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; }
+  font-family: "Gill Sans", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/NotreDame\/nd_bootstrap-master\/weiwen\/assets\/scss\/_nd_base\.scss}line{font-family:\0000324}}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
